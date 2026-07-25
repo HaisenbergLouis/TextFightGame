@@ -1,10 +1,14 @@
 package com.soren.ui;
 
+import com.soren.domain.User;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Login {
     public void start(){
         System.out.println("游戏的注册页面启动了");
+        ArrayList<User> list = new ArrayList<>();
 
         while (true) {
             System.out.println("╔════════════════════════════════╗");
@@ -17,9 +21,11 @@ public class Login {
 
             switch(choose){
                 case "1" :
+                    login(list);
                     System.out.println("登录");
                     break;
                 case "2" :
+                    register(list);
                     System.out.println("注册");
                     break;
                 case "3" :
@@ -33,10 +39,10 @@ public class Login {
             }
         }
     }
-    public void login(){
+    public void login(ArrayList<User> list){
         System.out.println("登录");
     }
-    public void register(){
+    public void register(ArrayList<User> list){
         System.out.println("注册");
     }
 }
