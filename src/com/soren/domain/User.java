@@ -21,7 +21,9 @@ public class User {
         status = true;
     }
 
-//    用户无法设置，是自动生成的，格式为：heima+5位数字的随机
+
+
+    //    用户无法设置，是自动生成的，格式为：heima+5位数字的随机
     public String CreateID(){
         StringBuilder sb = new StringBuilder("soren");
 
